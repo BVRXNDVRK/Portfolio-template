@@ -20,4 +20,16 @@
     &_grey {
         color: rgb(117, 117, 117);
     }
+
+    &_withCircle {
+        position: relative;
+        z-index: 1;
+        padding-left: 10px;
+        @include before_circle;
+    }
+
+    &__divider {
+        width: 60px;
+        border: 2px solid $main-color;
+    }
 }
