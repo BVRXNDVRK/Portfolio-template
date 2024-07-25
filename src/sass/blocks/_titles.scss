@@ -2,6 +2,8 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 60px;
+    position: relative;
+    z-index: 1;
 
     &_fz14 {
         font-size: 14px;
@@ -13,6 +15,11 @@
         line-height: 24px;
     }
 
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     &_fz48 {
         font-size: 48px;
     }
@@ -21,15 +28,28 @@
         color: rgb(117, 117, 117);
     }
 
-    &_withCircle {
-        position: relative;
-        z-index: 1;
+    &_withLeftCircle {
         padding-left: 10px;
         @include before_circle;
     }
 
+    &_withCenterCircle {
+        @include before_circle;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
     &__divider {
+        margin: 0 auto;
+        margin-top: 20px;
         width: 60px;
         border: 2px solid $main-color;
+
+        &_left {
+            margin: 0;
+        }
     }
 }
