@@ -28,8 +28,13 @@
         color: rgb(117, 117, 117);
     }
 
+    &_bold {
+        font-weight: bold;
+    }
+
     &_withLeftCircle {
         padding-left: 10px;
+        position: relative;
         @include before_circle;
     }
 

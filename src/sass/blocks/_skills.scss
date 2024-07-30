@@ -1,0 +1,76 @@
+.skills {
+    text-align: center;
+
+    &__cards {
+        margin-top: 60px;
+        padding: 0 10px 0 10px;
+        display: grid;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+
+    &__card {
+        padding: 30px 30px 25px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+        border: 1px solid black;
+
+        &-img {
+            height: 65px;
+    
+            img {
+                height: 100%;
+            }
+        }
+        
+        &-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 15px;
+        }
+    }
+
+    &__bars {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+
+    &__bar {
+        &-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-title {
+            &:before {
+                top: -36%;
+            }
+        }
+
+        &-wrapper {
+            margin-top: 27px;
+            height: 14px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #E8E4DE;
+        }
+
+        &-scale {
+            height: 100%;
+            background-color: $main-color;
+            border-radius: 5px;
+        }
+    }
+
+}

@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closebtn = document.querySelector('.menu__close');
+      closebtn = document.querySelector('.menu__close'),
+      percentages = document.querySelectorAll('[data-percentage]'),
+      scales = document.querySelectorAll('.skills__bar-scale');
 
 const toggleMenu = (btn) => {
     btn.addEventListener('click', () => {
@@ -10,3 +12,7 @@ const toggleMenu = (btn) => {
 
 toggleMenu(hamburger);
 toggleMenu(closebtn);
+
+percentages.forEach((number, i) => {
+    scales[i].style = `width: ${number.textContent}`;
+});
