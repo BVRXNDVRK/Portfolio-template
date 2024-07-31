@@ -13,6 +13,8 @@
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/pricelist';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -25,6 +27,8 @@
     margin: 0 auto;
 }
 
-section:not(:first-child) {
-    padding-top: 120px;
+section {
+    &:not(:first-child) {
+        padding-top: 120px;
+    }
 }
