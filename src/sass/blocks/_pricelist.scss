@@ -33,8 +33,7 @@
         &-text {
             margin-top: 5px;
             text-align: left;
-            font-size: 12px;
-            line-height: 18px;
+            @include text_fz12;
         }
     }
 

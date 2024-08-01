@@ -20,9 +20,8 @@
     }
 
     &__text {
-        font-size: 14px;
-        line-height: 21px;
         margin-top: 20px;
+        @include text;
     }
 
     &__cards {
@@ -50,9 +49,8 @@
         }
 
         &-text {
-            font-size: 12px;
-            line-height: 18px;
             margin-top: 6px;
+            @include text_fz12;
         }
     }
 

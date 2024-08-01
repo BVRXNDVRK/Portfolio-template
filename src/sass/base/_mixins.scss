@@ -11,3 +11,13 @@
         left: 0;
     }
 }
+
+@mixin text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin text_fz12 {
+    font-size: 12px;
+    line-height: 18px;
+}
